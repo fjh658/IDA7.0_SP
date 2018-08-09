@@ -47,6 +47,8 @@ Cause:
 
 #### Fixed:
 ``` c++
+#import <Foundation/Foundation.h>
+
 void QCocoaInputContext::updateLocale()
 {
     /* https://bugreports.qt.io/browse/QTBUG-48772
