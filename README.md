@@ -76,3 +76,18 @@ void QCocoaInputContext::updateLocale()
 ```
 
 #### Recompile Qt5.6
+Compile argument
+```
+sh configure "-nomake" "tests" "-qtnamespace" "QT" "-confirm-license" "-accessibility" "-opensource" "-force-debug-info" "-platform" "macx-g++" "-debug-and-release" "-fontconfig" "-qt-freetype" "-qt-libpng" "-qt-sql-sqlite" "-prefix" "Qt/5.6.0-x64"
+```
+FAQ
+```
+Xcode not set up properly. You may need to confirm the license agreement by running /usr/bin/xcodebuild.
+```
+
+```
+Replace 
+"/usr/bin/xcrun -find xcrun" 
+to 
+"/usr/bin/xcrun -find xcodebuild"  
+```
