@@ -1,6 +1,13 @@
 ### When multiply input method the IDA pro7.0 on mojave, ida will crash.
 
 ![](./images/ida7.0_crash.png)
+```
+md5 libqcocoa.dylib
+MD5 (libqcocoa.dylib) = 45b7ef7998fb9ab2093c3c50a7f81a21
+
+shasum libqcocoa.dylib
+e517fb8f75e6c9069b9dd2668b6a6cfe1871a1b9  libqcocoa.dylib
+```
 #### Replace the "libqcocoa.dylib" to /Applications/IDA Pro 7.0/ida.app/Contents/PlugIns/platforms/libqcocoa.dylib
 
 ------
