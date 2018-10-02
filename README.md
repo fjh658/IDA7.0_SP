@@ -1,4 +1,4 @@
-### When multiply input method the IDA pro7.0 on mojave, ida will crash.
+### When multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
 
 ![](./images/ida7.0_crash.png)
 ```
