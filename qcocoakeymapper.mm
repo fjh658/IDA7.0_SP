@@ -350,7 +350,8 @@ Qt::KeyboardModifiers QCocoaKeyMapper::queryKeyboardModifiers() {
   return qt_mac_get_modifiers(GetCurrentEventKeyModifiers());
 }
 
-bool QCocoaKeyMapper::updateKeyboard() { // Fixed shortcuts do not work
+// Fixed shortcuts do not work in non-english input method
+bool QCocoaKeyMapper::updateKeyboard() {
   const UCKeyboardLayout *uchrData = 0;
   QCFType<TISInputSourceRef> source =
       TISCopyInputMethodKeyboardLayoutOverride();
