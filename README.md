@@ -1,21 +1,40 @@
-### When multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
+1. #### Fixed when multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
 
-![](./images/ida7.0_crash.png)
+2. #### Fixed shortcuts do not work in non-english input method. Eg: F2, tab, ctrl+enter etc.
+
+```
+Replace the "libqcocoa.dylib" to 
+/Applications/IDA Pro 7.0/ida.app/Contents/PlugIns/platforms/libqcocoa.dylib
+```
+
+
+
+#### Binary file checksum:
+
 ```
 md5 libqcocoa.dylib
-MD5 (libqcocoa.dylib) = 45b7ef7998fb9ab2093c3c50a7f81a21
+MD5 (libqcocoa.dylib) = ff8a1f3fea897c40055cefd7bb7ccf40
 
 shasum libqcocoa.dylib
-e517fb8f75e6c9069b9dd2668b6a6cfe1871a1b9  libqcocoa.dylib
+e1644a89b27aaf570cdb716f72d5e50612373cbf  libqcocoa.dylib
 ```
-#### Replace the "libqcocoa.dylib" to /Applications/IDA Pro 7.0/ida.app/Contents/PlugIns/platforms/libqcocoa.dylib
 
+
+
+
+
+#### Detail:
+
+#### When multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
+
+![](./images/ida7.0_crash.png)
 ------
 
-#### Solution: 
-#### ida7.0 using Qt5.6
+##### Solution: 
+##### ida7.0 using Qt5.6
 
-**crash stack:**
+##### **crash stack:**
+
 ```
 Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
 Exception Codes:       KERN_INVALID_ADDRESS at 0x00003eadde8f1958
@@ -50,7 +69,7 @@ Cause:
     }
 ```
 
-**langRef** wild pointer
+**langRef** dangling pointer
 
 #### Fixed:
 ``` c++
