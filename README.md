@@ -1,6 +1,6 @@
-1. #### Fixed when multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
-
-2. #### Fixed shortcuts do not work in non-english input method. Eg: F2, tab, ctrl+enter etc.
+Bugfix
+- Fixed when multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
+- Fixed shortcuts do not work in non-english input method. Eg: F2, tab, ctrl+enter etc.
 
 ```
 Replace the "libqcocoa.dylib" to 
