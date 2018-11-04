@@ -1,7 +1,7 @@
-#### Bugfix
+#### IDA7.0_SP
 - Fixed when multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
 - Fixed shortcuts do not work in non-english input method. Eg: F2, tab, ctrl+enter etc.
-
+- Added load bundle for open dialog
 ```
 Replace the "libqcocoa.dylib" to 
 /Applications/IDA Pro 7.0/ida.app/Contents/PlugIns/platforms/libqcocoa.dylib
@@ -13,10 +13,10 @@ Replace the "libqcocoa.dylib" to
 
 ```
 md5 libqcocoa.dylib
-MD5 (libqcocoa.dylib) = ff8a1f3fea897c40055cefd7bb7ccf40
+MD5 (libqcocoa.dylib) = 9c8fa1ec2d16bc18e326f362918b0cb9
 
 shasum libqcocoa.dylib
-e1644a89b27aaf570cdb716f72d5e50612373cbf  libqcocoa.dylib
+23d94e8dae902515f1587e4bda8292e536c8e25a  libqcocoa.dylib
 ```
 
 
@@ -24,6 +24,8 @@ e1644a89b27aaf570cdb716f72d5e50612373cbf  libqcocoa.dylib
 
 
 #### Detail:
+#### Added load bundle for open dialog
+![](./images/load_bundle_open_dlg.png)
 
 #### When multiply input method the IDA pro7.0 on mojave, ida will crash in non-english input method.
 
