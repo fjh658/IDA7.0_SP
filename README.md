@@ -107,7 +107,7 @@ void QCocoaInputContext::updateLocale()
 ```
 
 #### Recompile Qt5.6
-**Download** 
+**Download (Xcode10 supported)** 
 ```
 https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg
 ```
