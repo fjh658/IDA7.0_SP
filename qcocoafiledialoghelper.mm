@@ -117,6 +117,7 @@ QT_NAMESPACE_ALIAS_OBJC_CLASS(QNSOpenSavePanelDelegate);
     mOptions = options;
     if (mOptions->acceptMode() == QFileDialogOptions::AcceptOpen){
         mOpenPanel = [NSOpenPanel openPanel];
+        [mOpenPanel setTreatsFilePackagesAsDirectories:YES];
         mSavePanel = mOpenPanel;
     } else {
         mSavePanel = [NSSavePanel savePanel];
